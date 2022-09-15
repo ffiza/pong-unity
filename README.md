@@ -21,8 +21,7 @@ A dungeon-themed Pong clone. All code is written in C# using the Unity engine.
 
 ## Usage
 
-If you have Unity installed, you can open the project from the application.
-Otherwise, you can use the Linux executable `Builds/DungeonPong_Linux.x86_64`.
+Open the project with Unity and play the game.
 
 ## Screenshots
 
