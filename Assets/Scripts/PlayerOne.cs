@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Class <c>PlayerOne</c> manages the movement and score of player one.
+/// </summary>
 public class PlayerOne : MonoBehaviour {
     public float verticalVelocity = 10f;
     private Vector3 velocity;
@@ -11,6 +14,9 @@ public class PlayerOne : MonoBehaviour {
         Move();
     }
 
+    /// <summary>
+    /// This method moves the player on key press.
+    /// </summary>
     void Move() {
         velocity = new Vector3(0, verticalVelocity*Time.deltaTime, 0);
 
@@ -22,10 +28,16 @@ public class PlayerOne : MonoBehaviour {
         }
     }
 
+    /// <summary>
+    /// This method increases the score of the player.
+    /// </summary>
     public void IncreaseScore() {
         score += 1;
     }
 
+    /// <summary>
+    /// Getter method for the score.
+    /// </summary>
     public int GetScore() {
         return score;
     }
